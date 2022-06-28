@@ -10,10 +10,11 @@
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="280dp"
         android:layout_height="280dp"
-        app:srcCompat="@raw/splash_loading"
+        app:lottie_rawRes="@raw/shopping_anim"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

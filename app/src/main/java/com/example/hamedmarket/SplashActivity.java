@@ -11,20 +11,34 @@ import java.util.TimerTask;
 
 public class SplashActivity extends AppCompatActivity {
 
-    Timer timer;
-    Handler handler;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        timer = new Timer();
-        timer.schedule(new TimerTask() {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashActivity.this,MainActivity.class);
                 startActivity(intent);
+                finish();
             }
-        },1000,1);
+
+        },3000);
+
+
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 }
