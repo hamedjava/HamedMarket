@@ -1,46 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="230dp"
     android:background="@drawable/header_main_background"
-    android:padding="12dp">
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:gravity="left|bottom">
 
     <ImageView
         android:id="@+id/img_user_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="50dp"
         android:scaleType="centerCrop"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@mipmap/ic_launcher"/>
 
     <TextView
         android:id="@+id/tv_user_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="HAMED"
-        android:textSize="18sp"
+        android:layout_gravity="start|bottom"
         android:textColor="@color/white"
-        android:textAlignment="textStart"
-        app:layout_constraintStart_toStartOf="@+id/img_user_logo"
-        app:layout_constraintTop_toBottomOf="@+id/img_user_logo" />
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/tv_user_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="hamedpouyanfar1987@gmail.com"
-        android:textSize="16sp"
         android:textColor="@color/white"
-        android:textAlignment="textStart"
-        app:layout_constraintStart_toStartOf="@+id/tv_user_username"
-        app:layout_constraintTop_toBottomOf="@+id/tv_user_username" />
+        android:textSize="16sp"
+        android:layout_gravity="start|bottom"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
