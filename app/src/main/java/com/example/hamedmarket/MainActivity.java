@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer = (DrawerLayout) findViewById(R.id.drawer);
         nav_view = (NavigationView) findViewById(R.id.nav_view);
     }
+    
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
